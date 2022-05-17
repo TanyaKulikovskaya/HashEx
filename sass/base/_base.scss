@@ -85,6 +85,7 @@ body.lock {
     visibility: visible;
 }
 .logo {
+    display: flex;
     &__hash {
         display: block;
         height: 100%;

@@ -71,22 +71,24 @@ body.lock {
 .overlay.show {
   visibility: visible; }
 
-.logo__hash {
-  display: block;
-  height: 100%;
-  padding: 2px 7px 0 0; }
-.logo__sign {
-  height: 22px;
-  width: 22px; }
-.logo__content svg {
-  display: block; }
-.logo__title {
-  height: 24px;
-  width: 130px; }
-.logo__caption {
-  height: 8px;
-  width: 130px;
-  margin-top: 9px; }
+.logo {
+  display: flex; }
+  .logo__hash {
+    display: block;
+    height: 100%;
+    padding: 2px 7px 0 0; }
+  .logo__sign {
+    height: 22px;
+    width: 22px; }
+  .logo__content svg {
+    display: block; }
+  .logo__title {
+    height: 24px;
+    width: 130px; }
+  .logo__caption {
+    height: 8px;
+    width: 130px;
+    margin-top: 9px; }
 
 .btn {
   display: inline-flex;
@@ -120,8 +122,8 @@ body.lock {
   src: url(../../fonts/AvenirLTProMedium.woff2) format("woff2"); }
 .section-title {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 130%;
+  font-size: calc(36px + (45 - 36) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(47px + (58 - 47) * ((100vw - 320px) / (1440 - 320)));
   font-family: 'FuturaLT-Bold'; }
 
 .card-title {
@@ -433,5 +435,106 @@ body.lock {
       text-decoration: underline; }
       .contact-form__notice a:hover {
         color: #262626; }
+
+.footer {
+  background-color: #262626;
+  padding: 40px 0; }
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; }
+  .footer__column {
+    flex: 0 1 15%;
+    padding: 15px 10px; }
+    @media screen and (max-width: 1023px) {
+      .footer__column {
+        flex: 0 1 25%; } }
+    @media screen and (max-width: 768px) {
+      .footer__column {
+        flex: 0 1 50%; } }
+    .footer__column:first-child {
+      flex: 0 1 25%; }
+      @media screen and (max-width: 1023px) {
+        .footer__column:first-child {
+          flex: 0 1 50%; } }
+      @media screen and (max-width: 768px) {
+        .footer__column:first-child {
+          flex: 0 1 100%; } }
+  .footer__logo {
+    margin-bottom: 36px; }
+  .footer__contacts-list {
+    margin-bottom: 45px; }
+  .footer__policy-item {
+    font-size: 12px;
+    line-height: 120%;
+    color: #c4c4c4; }
+    .footer__policy-item:not(:last-child) {
+      margin-bottom: 9px; }
+  .footer__policy-link {
+    color: inherit; }
+    .footer__policy-link:hover {
+      text-decoration: underline; }
+  .footer__label {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    margin-bottom: 14px; }
+    @media screen and (max-width: 768px) {
+      .footer__label {
+        margin-bottom: 10px; } }
+
+.contacts-list {
+  display: flex; }
+  .contacts-list__item:not(:last-child) {
+    margin-right: 15px; }
+  .contacts-list__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #414141;
+    color: #f1f1f1;
+    transition: all 0.3s ease; }
+    .contacts-list__link:hover {
+      background-color: #c4c4c4;
+      color: #414141; }
+    .contacts-list__link svg {
+      fill: currentColor; }
+  .contacts-list__link--medium svg {
+    width: 22px;
+    height: 15px; }
+  .contacts-list__link--twitter svg {
+    width: 11px;
+    height: 10px; }
+  .contacts-list__link--linkedin svg {
+    width: 13px;
+    height: 13px; }
+  .contacts-list__link--github svg {
+    width: 17px;
+    height: 17px; }
+  .contacts-list__link--email svg {
+    width: 14px;
+    height: 10px; }
+  .contacts-list__link--telegram svg {
+    width: 13px;
+    height: 11px; }
+
+.menu-footer__item:not(:last-child) {
+  margin-bottom: 10px; }
+  @media screen and (max-width: 768px) {
+    .menu-footer__item:not(:last-child) {
+      margin-bottom: 6px; } }
+.menu-footer__link {
+  font-size: 12px;
+  line-height: 120%;
+  color: #f1f1f1;
+  transition: all 0.3s ease; }
+  .menu-footer__link:hover {
+    color: #c2f051; }
+
+.column-footer__item:not(:last-child) {
+  margin-bottom: 23px; }
 
 /*# sourceMappingURL=main.css.map */
