@@ -1,0 +1,132 @@
+.contact {
+    background: url(../../images/bg/contacts-bg.jpg) no-repeat center bottom / cover;
+    padding: 77px 0 57px;
+    background-color: $color-white;
+    color: $color-dark;
+    &__row {
+        display: flex;
+        margin: 0 -20px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    &__column {
+        flex: 0 0 50%;
+        padding: 30px 20px;
+        @media screen and (max-width: 768px) {
+            flex: 1 1 100%;
+        }
+    }
+    a {
+        color: inherit;
+    }
+}
+.contact-content {
+    &__title {
+        color: $color-black;
+        margin-bottom: 31px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 21px;
+        }
+    }
+    &__subtitle {
+        max-width: 391px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 107px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 51px;
+        }
+    }
+}
+.contact-contect {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: inherit;
+        &:hover {
+            color: #7AF051;
+        }
+        svg {
+            fill: currentColor;
+            margin-right: 10px;
+        }
+    }
+    &__link--telegram {
+        svg {
+            width: 17px;
+            height: 14px;
+        }
+    }
+    &__link--mail {
+        svg {
+            width: 16px;
+            height: 13px;
+        }
+    }
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 527px;
+    padding-top: 13px;
+    @media screen and (max-width: 768px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    &__input, 
+    &__textarea {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-family: 'AvenirLTProBook';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        background-color: $color-light;
+        &::placeholder {
+            font-family: 'AvenirLTProBook';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+            color: $color-dark;
+        }
+    }
+    &__input {
+        height: 45px;
+        margin-bottom: 29px;
+    }
+    &__textarea {
+        resize: none;
+        height: 116px;
+        margin-bottom: 33px;
+    }
+    &__btn {
+        align-self: flex-start;
+        margin-bottom: 17px;
+    }
+
+    &__notice {
+        font-size: 10px;
+        line-height: 120%;
+        color: $color-dark-gray;
+        a {
+            text-decoration: underline;
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+}
+
+

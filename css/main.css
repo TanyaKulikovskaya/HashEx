@@ -90,6 +90,7 @@ body.lock {
 
 .btn {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   border-radius: 30px;
   padding: 15px 30px;
@@ -331,5 +332,106 @@ body.lock {
   left: -35px;
   top: 50%;
   transform: translateY(-50%); }
+
+.contact {
+  background: url(../../images/bg/contacts-bg.jpg) no-repeat center bottom/cover;
+  padding: 77px 0 57px;
+  background-color: #ffffff;
+  color: #414141; }
+  .contact__row {
+    display: flex;
+    margin: 0 -20px; }
+    @media screen and (max-width: 768px) {
+      .contact__row {
+        flex-direction: column; } }
+  .contact__column {
+    flex: 0 0 50%;
+    padding: 30px 20px; }
+    @media screen and (max-width: 768px) {
+      .contact__column {
+        flex: 1 1 100%; } }
+  .contact a {
+    color: inherit; }
+
+.contact-content__title {
+  color: #262626;
+  margin-bottom: 31px; }
+  @media screen and (max-width: 768px) {
+    .contact-content__title {
+      margin-bottom: 21px; } }
+.contact-content__subtitle {
+  max-width: 391px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 107px; }
+  @media screen and (max-width: 768px) {
+    .contact-content__subtitle {
+      margin-bottom: 51px; } }
+
+.contact-contect__item:not(:last-child) {
+  margin-bottom: 9px; }
+.contact-contect__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: inherit; }
+  .contact-contect__link:hover {
+    color: #7AF051; }
+  .contact-contect__link svg {
+    fill: currentColor;
+    margin-right: 10px; }
+.contact-contect__link--telegram svg {
+  width: 17px;
+  height: 14px; }
+.contact-contect__link--mail svg {
+  width: 16px;
+  height: 13px; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 527px;
+  padding-top: 13px; }
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      max-width: 90%;
+      margin: 0 auto; } }
+  .contact-form__input, .contact-form__textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'AvenirLTProBook';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    background-color: #f1f1f1; }
+    .contact-form__input::placeholder, .contact-form__textarea::placeholder {
+      font-family: 'AvenirLTProBook';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: #414141; }
+  .contact-form__input {
+    height: 45px;
+    margin-bottom: 29px; }
+  .contact-form__textarea {
+    resize: none;
+    height: 116px;
+    margin-bottom: 33px; }
+  .contact-form__btn {
+    align-self: flex-start;
+    margin-bottom: 17px; }
+  .contact-form__notice {
+    font-size: 10px;
+    line-height: 120%;
+    color: #7c7c7c; }
+    .contact-form__notice a {
+      text-decoration: underline; }
+      .contact-form__notice a:hover {
+        color: #262626; }
 
 /*# sourceMappingURL=main.css.map */

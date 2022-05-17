@@ -89,6 +89,10 @@
             <path
                 d="M14.8436 1.41439L12.5858 11.973C12.4087 12.7256 11.9992 12.9248 11.3573 12.5706L7.93739 10.0472L6.27724 11.641C6.05588 11.8623 5.82346 11.973 5.57997 11.973L5.84559 8.48666L12.1874 2.77572C12.3423 2.62077 12.3423 2.53223 12.1874 2.5101C12.0546 2.46583 11.9107 2.49903 11.7558 2.60971L3.91981 7.55697L0.533095 6.49447C0.156793 6.38379 -0.0202908 6.21778 0.00184462 5.99643C0.02398 5.77507 0.256402 5.58692 0.69911 5.43197L13.8808 0.318691C14.2128 0.208014 14.4784 0.252284 14.6776 0.451503C14.8768 0.628587 14.9322 0.94955 14.8436 1.41439Z" />
         </symbol>
+        <symbol id="email" viewBox="0 0 16 13">
+            <path
+                d="M14.4 0H1.6C0.72 0 0.00799999 0.72 0.00799999 1.6L0 11.2C0 12.08 0.72 12.8 1.6 12.8H14.4C15.28 12.8 16 12.08 16 11.2V1.6C16 0.72 15.28 0 14.4 0ZM14.4 3.2L8 7.2L1.6 3.2V1.6L8 5.6L14.4 1.6V3.2Z" />
+        </symbol>
     </svg>
     <div class="overlay"></div>
     <div class="wrapper">
@@ -225,6 +229,56 @@
                                 partners.</p>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__row">
+                        <div class="contact__column">
+                            <div class="contact-content">
+                                <h3 class="contact-content__title section-title">Become part of the DeFi intelligence
+                                    alliance</h3>
+                                <p class="contact-content__subtitle">Fill out this form and we will choose the best
+                                    partnership offer for you</p>
+                                <ul class="contact-content__list">
+                                    <li class="contact-contect__item">
+                                        <a href="#" class="contact-contect__link contact-contect__link--telegram">
+                                            <svg role="img" focusable="false" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="#telegram" />
+                                            </svg>
+                                            <span>telegram</span>
+                                        </a>
+                                    </li>
+                                    <li class="contact-contect__item">
+                                        <a href="mailto:contact@hashex.org"
+                                            class="contact-contect__link contact-contect__link--mail">
+                                            <svg role="img" focusable="false" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="#email" />
+                                            </svg>
+                                            <span>contact@hashex.org</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact__column">
+                            <form action="#" method="post" class="contact-form">
+                                <input class="contact-form__input" type="text" placeholder="Name / Company Name">
+                                <input class="contact-form__input" type="email" placeholder="Email*" required>
+                                <input class="contact-form__input" type="text" placeholder="Telegram">
+                                <input class="contact-form__input" type="url" placeholder="Project link*" required>
+                                <textarea class="contact-form__textarea"
+                                    placeholder="Tell us about yourself"></textarea>
+                                <button type="submit" class="contact-form__btn btn">Apply for partnership</button>
+                                <p class="contact-form__notice">This site is protected by the <a href="#">Privacy
+                                        Policy</a> and <a href="#">Cookie Policy</a>
+                                    apply
+                                </p>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
