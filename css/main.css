@@ -263,7 +263,7 @@ body.lock {
     font-family: 'AvenirLTProMedium';
     margin-bottom: 34px; }
   .hero__btn {
-    margin-bottom: 46px;
+    margin-bottom: 60px;
     position: relative; }
     .hero__btn::after {
       content: "";
@@ -438,7 +438,7 @@ body.lock {
 
 .footer {
   background-color: #262626;
-  padding: 40px 0; }
+  padding: 54px 0 55px; }
   .footer__row {
     display: flex;
     flex-wrap: wrap;
