@@ -101,11 +101,19 @@ body.lock {
     &__title {
         height: 24px;
         width: 130px;
+        fill: $color-white;
     }
     &__caption {
         height: 8px;
         width: 130px;
         margin-top: 9px;
+        fill: $color-gray;
+    }
+    &:hover .logo__title {
+        fill: $color-lime;
+    }
+    &:hover .logo__caption {
+        fill: $color-green;
     }
 }
 
@@ -118,6 +126,10 @@ body.lock {
     min-height: 51px;
     min-width: 218px;
     font-weight: 500;
-    background: linear-gradient(91.83deg, #7AF051 16.38%, rgba(194, 240, 81, 0.8) 116.75%);
+    background: linear-gradient(91.83deg, $color-green 16.38%, $color-lime 116.75%);
     color: $color-midnight;
+    transition: all 0.3s ease;
+    &:hover {
+        background: linear-gradient(91.83deg, $color-lime 16.38%, $color-green 116.75%);
+    }
 }

@@ -120,16 +120,13 @@
 }
 .menu-footer {
     &__item {
-        &:not(:last-child) {
-            margin-bottom: 10px;
-            @media screen and (max-width: 768px) {
-                margin-bottom: 6px;
-            }
-        }
+        padding: 2px 0;
     }
     &__link {
+        display: flex;
+        min-height: 28px;
         font-size: 12px;
-        line-height: 120%;
+        line-height: 14px;
         color: $color-light;
         transition: all 0.3s ease;
         &:hover {
@@ -139,6 +136,9 @@
 }
 .column-footer {
     &__item:not(:last-child) {
-        margin-bottom: 23px;
+        margin-bottom: 29px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 33px;
+        }
     }
 }
